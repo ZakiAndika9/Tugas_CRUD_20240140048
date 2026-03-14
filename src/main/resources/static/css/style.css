@@ -1,0 +1,235 @@
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+background:#f1f5f9;
+}
+
+/* LAYOUT */
+
+.dashboard{
+display:flex;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:#0f766e;
+color:white;
+padding:25px;
+}
+
+.sidebar h2{
+margin-bottom:30px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.sidebar li:hover{
+background:rgba(255,255,255,0.2);
+}
+
+.active{
+background:rgba(255,255,255,0.3);
+}
+
+/* CONTENT */
+
+.content{
+flex:1;
+padding:30px;
+}
+
+/* HEADER */
+
+.topbar{
+margin-bottom:20px;
+}
+
+.topbar h1{
+font-size:24px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:350px 1fr;
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h2{
+margin-top:0;
+}
+
+/* FORM */
+
+label{
+display:block;
+margin-top:10px;
+font-weight:500;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.actions{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+/* BUTTON */
+
+button{
+border:none;
+padding:8px 14px;
+cursor:pointer;
+border-radius:6px;
+}
+
+.btn-primary{
+background:#0f766e;
+color:white;
+}
+
+.btn-primary:hover{
+background:#115e59;
+}
+
+.btn-secondary{
+background:#e5e7eb;
+}
+
+.btn-edit{
+background:#2563eb;
+color:white;
+}
+
+.btn-delete{
+background:#dc2626;
+color:white;
+}
+
+/* TABLE */
+
+.table-card{
+overflow:auto;
+}
+
+.table-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#0f766e;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+tr:hover{
+background:#f0fdfa;
+}
+
+.empty{
+text-align:center;
+padding:20px;
+color:#777;
+}
+
+/* BADGE */
+
+.badge-male{
+background:#dbeafe;
+padding:4px 8px;
+border-radius:6px;
+}
+
+.badge-female{
+background:#fce7f3;
+padding:4px 8px;
+border-radius:6px;
+}
+
+/* MODAL */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.modal-content{
+background:white;
+padding:25px;
+border-radius:8px;
+width:300px;
+text-align:center;
+}
+
+.hidden{
+display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+display:none;
+}
+
+}
