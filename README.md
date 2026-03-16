@@ -71,35 +71,7 @@ Struktur tersebut digunakan untuk memisahkan bagian **controller, model, reposit
 
 ---
 
-## Cara Menjalankan Project
 
-1. Clone repository ini
-
-```
-git clone https://github.com/ZakiAndika9/Tugas_CRUD_20240140048.git
-```
-
-2. Masuk ke folder project
-
-```
-cd Tugas_CRUD_20240140048
-```
-
-3. Jalankan database **MySQL**
-
-4. Buat database dengan nama:
-
-```
-spring
-```
-
-5. Jalankan aplikasi menggunakan **Spring Boot**
-
-6. Buka browser dan akses:
-
-```
-http://localhost:8080
-```
 
 ## Tujuan Project
 
